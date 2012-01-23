@@ -10,7 +10,7 @@
     <groupId>eu.vitaliy</groupId>
     <artifactId>vitaliy-parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>vitaliy-parent</name>
     <url>https://github.com/VitaliyOliynyk/vitaliy-parent</url>
     <description>parent pom</description>
