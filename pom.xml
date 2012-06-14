@@ -83,7 +83,7 @@
         <dependency>
             <groupId>pl.pragmatists</groupId>
             <artifactId>JUnitParams</artifactId>
-            <version>0.4.0</version>
+            <version>0.5.0</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -91,11 +91,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <repositories>
-
         <repository>
             <id>jboss-public-repository-group</id>
-            <name>JBoss Public Repository Group</name>
-            <url>http://repository.jboss.org/nexus/content/groups/public</url>
+            <name>JBoss Public Maven Repository Group</name>
+            <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
             <layout>default</layout>
             <releases>
                 <enabled>true</enabled>
@@ -103,46 +102,9 @@
             </releases>
             <snapshots>
                 <enabled>true</enabled>
-            </snapshots>
-        </repository>
-
-        <repository>
-            <id>jboss-deprecated</id>
-            <name>JBoss Deprecated</name>
-            <url>https://repository.jboss.org/nexus/content/repositories/deprecated</url>
-            <layout>default</layout>
-            <releases>
-                <enabled>true</enabled>
                 <updatePolicy>never</updatePolicy>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
             </snapshots>
         </repository>
-        <repository>
-            <id>jboss-nexus-releases</id>
-            <name>JBoss Nexus Releases</name>
-            <url>https://repository.jboss.org/nexus/content/repositories/releases</url>
-            <layout>default</layout>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-
-        <repository>
-            <id>jboss-nexus-snapshots</id>
-            <name>JBoss Nexus Snapshots</name>
-            <url>https://repository.jboss.org/nexus/content/repositories/snapshots</url>
-            <layout>default</layout>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-
     </repositories>
     <pluginRepositories>
         <pluginRepository>
@@ -155,6 +117,20 @@
             </releases>
             <snapshots>
                 <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+            <id>jboss-public-repository-group</id>
+            <name>JBoss Public Maven Repository Group</name>
+            <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
